@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,33 @@
 
 .read-the-docs {
   color: #888;
+}
+ */
+ :root {
+  --yellow: #FDC913;
+  --gray-500: #5F5F5F;
+  --gray-900: #292929;
+  --red: #CE2829;
+  --beige: #FAF7F2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Barlow", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--beige);
+  color: #111;
+}
+
+/* #root sınırlaması kaldırıldı, tam genişlikte */
+#root {
+  width: 100%;
+  padding: 0;
 }

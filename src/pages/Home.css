@@ -1,0 +1,116 @@
+:root {
+  --red: #CE2829;
+  --yellow: #FDC913;
+  --dark: #292929;
+  --white: #fff;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-color: #CE2829;
+  overflow: hidden;              
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+}
+ .hero-bg {
+  position: absolute;
+  bottom: 0;                 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  max-width: none; 
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  object-fit: cover;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 40px;
+}
+
+.hero-logo {
+  height: 32px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+.hero-title .word
+ {
+  display: block;
+}
+
+.hero-button,
+.hero-button:visited {
+  text-decoration: none;          /* çizgiyi kapat */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  background: #FDC913;            /* sarı */
+  color: #292929;                  /* koyu yazı */
+  font-weight: 700;
+  letter-spacing: .2px;
+  box-shadow: 0 3px 0 #d4ab0e;    /* hafif derinlik */
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  text-decoration: none;          /* hover’da da çizgi olmasın */
+  filter: brightness(1.05);
+  outline: none;
+}
+
+@media (max-width: 1200px) {
+  .hero { background-size: 1200px auto; }
+}
+@media (max-width: 992px) {
+  .hero { background-size: 1000px auto; }
+}
+@media (max-width: 768px) {
+  .hero-bg {
+    width: 250%;       
+    max-width: none;
+    transform: translateX(-50%); 
+  }
+    .hero-content {
+    position: relative;
+    top: -50px;
+  }
+}
+@media (min-width: 768px) {
+  .hero-content {
+    position: relative;
+    top: -150px; /* Önceki -100px yerine daha fazla yukarı taşır */
+    padding-top: 0;
+  }
+   .hero-bg {
+    width: 100%;
+    max-width: none; 
+  }
+
+  .hero-title .line1,
+  .hero-title .line2 { display: block; }
+
+  .hero-title .line1 .word,
+  .hero-title .line2 .word {
+    display: inline-block;
+    margin-right: 0.25em;
+  }
+}
