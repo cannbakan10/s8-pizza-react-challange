@@ -1,0 +1,61 @@
+.footer{
+  background:#111;
+  color:#fff;
+  padding:40px 20px 0;
+  font-family:"Roboto",sans-serif;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:32px;
+}
+.footer-col{ font-size:14px; }
+
+.footer-logo{
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+.footer-contact{
+  list-style:none; margin:0; padding:0;
+  display:flex; flex-direction:column; gap:12px;
+}
+.footer-contact li{
+  display:flex; align-items:flex-start; gap:10px;
+}
+.footer-contact img{ width:18px; height:18px; margin-top:2px; }
+.footer-heading{
+  font-size:16px;
+  font-weight:600;
+  margin-bottom:16px;
+}
+
+.footer-links{
+  list-style:none; margin:0; padding:0;
+  display:flex; flex-direction:column; gap:8px;
+}
+.footer-links li{ cursor:pointer; }
+.footer-links li:hover{ text-decoration:underline; }
+.footer-insta{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:8px;
+}
+.footer-insta img{
+  width:100%;
+  border-radius:6px;
+  object-fit:cover;
+}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);
+  margin-top:32px;
+  padding:16px 0;
+  display:flex; align-items:center; justify-content:space-between;
+  font-size:13px; color:#aaa;
+}
+
+
+/* Mobil uyum */
+@media(max-width:768px){
+  .footer-grid{ grid-template-columns:1fr; }
+}
